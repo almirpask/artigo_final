@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Achievement:</strong>
+  <%= @achievements_student.achievement %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @achievements_student.student %>
+</p>
+
+<%= link_to 'Edit', edit_achievements_student_path(@achievements_student) %> |
+<%= link_to 'Back', achievements_students_path %>

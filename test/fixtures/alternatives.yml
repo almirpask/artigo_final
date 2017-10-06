@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  answer: false
+  questionnaire: one
+
+two:
+  description: MyString
+  answer: false
+  questionnaire: two

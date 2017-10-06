@@ -1,0 +1,27 @@
+<%= form_with(model: achievements_student, local: true) do |form| %>
+  <% if achievements_student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(achievements_student.errors.count, "error") %> prohibited this achievements_student from being saved:</h2>
+
+      <ul>
+      <% achievements_student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :achievement_id %>
+    <%= form.text_field :achievement_id, id: :achievements_student_achievement_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id, id: :achievements_student_student_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
